@@ -2,8 +2,8 @@ import React from 'react'
 
 const Shop = () => {
   return (
-    <div>
-      
+    <div style={{backgroundColor:'red'}}>
+      <h1>Testing title</h1>
     </div>
   )
 }
