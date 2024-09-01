@@ -39,7 +39,10 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 5px;
     height: 100%;
     width: 75px;
     color: #f3f3f3;
@@ -52,6 +55,8 @@
 }
 
 .active{
+    padding-bottom: -10px;
+    border-style: none;
     border-bottom: #FF4141;
     border-width: 5px;
     border-bottom-style:solid;
@@ -61,6 +66,8 @@
 }
 
 .nav-menu li:hover{
+    padding-bottom: -10px;
+    border-style: none;
     border-bottom: #FF4141;
     border-width: 5px;
     border-bottom-style:solid;
@@ -81,7 +88,7 @@
     border-radius: 75px;
     color: #515151;
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 600;
     background: white;
     cursor: pointer;
 }
