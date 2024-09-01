@@ -1,19 +1,20 @@
-div{
+/* div{
     flex: 1;
     
-}
+} */
+ 
+/* dont style raw tags like div, it will affect to all div tags inside the project */
 
 .navbar{
     display: flex;
     justify-content: space-around;
-    padding: 10px;
-    box-shadow: 0 1px 3px -2px black;
+    align-items:'center';
+    height: 100px;    
 }
 
 .nav-logo{
     display: flex;
     align-items: center;
-    gap: 10px;
 }
 
 .nav-logo p{
@@ -26,10 +27,10 @@ div{
     display: flex;
     align-items: center;
     list-style: none;
-    gap: 50px;
     color: #626262;
     font-size: 20px;
     font-weight: 500;
+
 }
 
 .nav-menu li{
@@ -37,16 +38,35 @@ div{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 13px;
     cursor: pointer;
+    padding: 10px;
+    height: 100%;
+    width: 75px;
+    color: #f3f3f3;
+   
+}
+.nav-menu li a{
+    color: #171717;
+    font-weight: 600;
+    text-decoration: none;
 }
 
-.nav-menu hr{
-    border: none;
-    width: 80%;
-    height: 3px;
-    border-radius: 10px;
-    background: #FF4141;
+.active{
+    border-bottom: #FF4141;
+    border-width: 5px;
+    border-bottom-style:solid;
+    border-spacing: 0px;
+    color: #f3f3f3;
+    animation: fadeIn 1s forwards backwards;
+}
+
+.nav-menu li:hover{
+    border-bottom: #FF4141;
+    border-width: 5px;
+    border-bottom-style:solid;
+    border-spacing: 0px;
+    color: #f3f3f3;
+    animation: fadeIn 1s forwards;
 }
 
 .nav-login-cart{
@@ -56,10 +76,8 @@ div{
 }
 
 .nav-login-cart button{
-    width: 157px;
-    height: 58px;
-    outline: none;
-    border: 1px solid #7a7a7a;
+    padding: 10px 30px;
+    border: 2px solid #7a7a7a;
     border-radius: 75px;
     color: #515151;
     font-size: 20px;
@@ -67,14 +85,19 @@ div{
     background: white;
     cursor: pointer;
 }
+.nav-login-cart button:hover{
+    color: #FF4141;
+    border: 2px solid #FF4141;
+    animation: fadeIn 1s forwards;
+}
 
 .nav-login-cart button:active{
     background: #f3f3f3;    
 }
 
 .nav-cart-count{
-    width: 22px;
-    height: 22px;
+    width: 20px;
+    height: 20px;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -86,3 +109,12 @@ div{
     color: white;
 }
 
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+  }
