@@ -71,7 +71,7 @@
     }
 }
 
-@media(max-width:500){
+@media(max-width:480){
     
     .collections{
         display: grid;

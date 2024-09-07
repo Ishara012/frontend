@@ -206,7 +206,7 @@
     }
 }
 
-@media(max-width:500px){
+@media(max-width:480px){
     .navbar{
         padding: 8px 0px;
         gap: 0;
