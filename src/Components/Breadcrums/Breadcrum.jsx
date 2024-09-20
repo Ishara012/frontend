@@ -4,11 +4,7 @@ import arrow_icon from '../Assets/breadcrum_arrow.png'
 
 const Breadcrums = (props) => {
 
-  // error was here , call the exact prop name which is send from when this fucnction called
-    // const{product} = props;
     const{product} = props;
-
-
 
   return (
     <div className='breadcrum'>

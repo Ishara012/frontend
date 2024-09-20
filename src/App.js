@@ -12,6 +12,8 @@ import Fotter from './Components/Footer/Fotter';
 import men_banner from './Components/Assets/banner_mens.png'
 import women_banner from './Components/Assets/banner_women.png'
 import kids_banner from './Components/Assets/banner_kids.png'
+import Orders from './Pages/Orders';
+ 
 
 function App() {
   return (
@@ -26,6 +28,7 @@ function App() {
           <Route path='/product/:productId' element={<Product />} />
           <Route path='/cart' element={<Cart />} />
           <Route path='/login' element={<LoginSignup />} />
+          <Route path='/orders' element={<Orders />} />
         </Routes>
         <Fotter></Fotter>
       </BrowserRouter>
